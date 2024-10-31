@@ -20,3 +20,6 @@ vscode/
 
 expo-env.d.ts
 # @end expo-cli
+
+# template
+app-example/
