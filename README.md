@@ -48,3 +48,22 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+Generate APK
+To generate an APK for your Expo app, follow these steps:
+
+Install the EAS CLI:
+npm install -g eas-cli
+
+Configure the EAS:
+eas build:configure
+
+Follow the instructions provided by EAS to download the generated APK.
+
+Get a fresh project
+When you're ready, run:
+eas build -p android
+
+Get a fresh project
+When you're ready, run:
+npm run reset-project
