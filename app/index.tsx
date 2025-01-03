@@ -5,7 +5,7 @@ import { Provider as PaperProvider, useTheme, Appbar, Drawer } from 'react-nativ
 import { GestureHandlerRootView, DrawerLayout } from 'react-native-gesture-handler';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Screen1 from './screens/Screen1';
+import Inicio from './screens/Inicio';
 import Screen2 from './screens/Screen2';
 import Screen3 from './screens/Screen3'; 
 
@@ -20,10 +20,10 @@ const MainContent = () => {
     <View style={styles.drawerContent}>
       <Drawer.Section title="Menu">
         <Drawer.Item
-          label="Opção 1"
+          label="Inicio"
           onPress={() => {
             drawerRef.current?.closeDrawer();
-            navigation.navigate('Screen1');
+            navigation.navigate('Inicio');
           }}
         />
         <Drawer.Item
@@ -58,8 +58,8 @@ const MainContent = () => {
           <Appbar.Content title="Meu Bolso" />
         </Appbar.Header>
         <View style={styles.content}>
-          <Stack.Navigator initialRouteName="Screen1" screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="Screen1" component={Screen1} />
+          <Stack.Navigator initialRouteName="Inicio" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Inicio" component={Inicio} />
             <Stack.Screen name="Screen2" component={Screen2} />
             <Stack.Screen name="Screen3" component={Screen3} />
           </Stack.Navigator>
